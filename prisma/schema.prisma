@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+model CountrySong {
+  id       String   @id
+  name     String
+  code     String
+  songName String
+  by       String[]
+  release  String
+  Genre    Genre[]
+  Link     Link[]
+}
+
+model Genre {
+  id            String       @id
+  name          String
+  countrySongId String?
+  CountrySong   CountrySong? @relation(fields: [countrySongId], references: [id])
+}
+
+model Link {
+  id            String       @id
+  name          String
+  link          String
+  countrySongId String?
+  CountrySong   CountrySong? @relation(fields: [countrySongId], references: [id])
+}
