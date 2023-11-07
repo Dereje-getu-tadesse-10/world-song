@@ -6,7 +6,7 @@ const pageLinks = [
 ];
 
 export const Navbar = () => (
-        <header className='fixed top-0 left-0 right-0 z-50 max-w-[1120px] mx-auto flex items-center justify-between w-full px-4 py-4 bg-transparent h-24 md:px-0'>
+        <header className='fixed top-0 left-0 right-0 z-50 max-w-[1120px] mx-auto flex items-center justify-between w-full px-4 py-4 bg-transparent h-24'>
             <nav className='h-full w-full rounded-full bg-card border shadow flex justify-between items-center'>
                 <div className='pl-8'>
                     <Link href='/'>

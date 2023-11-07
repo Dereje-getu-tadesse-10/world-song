@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Inter as FontSans } from "next/font/google"
 import { ThemeProvider } from './theme-provider'
 import { Navbar } from '@/components/navbar'
+import { Footer } from '@/components/footer'
  
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -23,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <body 
-       className={fontSans.className}
+       className={
+        cn(fontSans.className)
+       }
       >
         <ThemeProvider
             attribute="class"
@@ -33,6 +36,7 @@ export default function RootLayout({
           >
             <Navbar/>
             {children}
+            <Footer/>
           </ThemeProvider>
       </body>
     </html>
