@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <body 
        className={
-        cn(fontSans.className)
+        cn(fontSans.className, "prose dark:prose-invert prose-a:no-underline max-w-none prose-li:list-none")
        }
       >
         <ThemeProvider

@@ -48,7 +48,7 @@ export const HowToUse = () => {
                         </CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <CardDescription>{item.description}</CardDescription>
+                        <CardDescription className="my-0 text-card-foreground">{item.description}</CardDescription>
                     </CardContent>
                 </Card>
             ))}
