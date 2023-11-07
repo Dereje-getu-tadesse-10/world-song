@@ -13,7 +13,7 @@ export const Hero = () => (
             </p>
         </div >
         <Link 
-            href={`/#preview`}
+            href={`/songs`}
             className={buttonVariants({className:"max-w-max mx-auto mt-6"})}
         >
             Commencer à écouter
