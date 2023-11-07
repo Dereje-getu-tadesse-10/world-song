@@ -15,6 +15,7 @@ export default async function SongPage({
             id: code,
         },
         select: {
+            id: true,
             by: true,
             code: true,
             name: true,
@@ -29,8 +30,6 @@ export default async function SongPage({
     if (!countrie) {
         notFound()
     }
-
-    console.log(countrie)
 
     return (
         <main className='max-w-[1000px] mx-auto px-4'>
