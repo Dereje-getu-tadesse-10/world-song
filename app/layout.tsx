@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter as FontSans } from "next/font/google"
 import { ThemeProvider } from './theme-provider'
+import { Navbar } from '@/components/navbar'
  
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <body 
-       className={fontSans.variable}
+       className={fontSans.className}
       >
         <ThemeProvider
             attribute="class"
@@ -30,6 +31,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar/>
             {children}
           </ThemeProvider>
       </body>
