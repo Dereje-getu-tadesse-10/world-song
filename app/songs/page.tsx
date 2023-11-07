@@ -1,7 +1,14 @@
 import { Header } from '@/components/header'
 import { SongCard } from '@/components/song-card'
 import { prisma } from '@/prisma'
+import { Metadata } from 'next'
 
+
+export const metadata: Metadata = {
+    title: 'Pays et musiques',
+    description: 'Retrouvez les musiques typiques de chaque pays',
+  }
+  
 const Songs = async () => {
 
     const countries = await prisma.countrySong.findMany({
