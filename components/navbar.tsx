@@ -10,7 +10,7 @@ export const Navbar = () => (
             <nav className='h-full w-full rounded-full bg-card border shadow flex justify-between items-center'>
                 <div className='pl-8'>
                     <Link href='/'>
-                        <h1 className='mb-0 font-bold text-xl'>Dito.</h1>
+                        <h1 className='mb-0 font-bold text-xl'>WS</h1>
                     </Link>
                 </div>
                 <ul className='flex items-center pr-8'>
