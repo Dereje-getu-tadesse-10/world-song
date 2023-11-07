@@ -1,10 +1,13 @@
-import Image from 'next/image'
+import { Hero } from '@/components/hero'
+import { HowToUse } from '@/components/how-to-use'
 
 
 export default async function Home() {
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className='max-w-[1000px] mx-auto px-4'>
+      <Hero/>
+      <HowToUse/>
     </main>
   )
 }
