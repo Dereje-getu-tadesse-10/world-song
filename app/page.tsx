@@ -1,6 +1,11 @@
 import Image from 'next/image'
+import { prisma } from '@/prisma';
 
-export default function Home() {
+import type { NextRequest } from 'next/server'
+
+export default async function Home() {
+  const songs = await prisma.countrySong.findMany()
+  console.log(songs)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
