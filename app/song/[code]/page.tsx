@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { SongInfo } from "@/components/song-info";
 import { prisma } from "@/prisma";
 
+export const runtime = 'edge';
 
 export default async function SongPage({
     params: { code },

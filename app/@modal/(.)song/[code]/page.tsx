@@ -4,6 +4,8 @@ import { SongInfo } from "@/components/song-info";
 import Modal from "@/components/dialog";
 import { prisma } from "@/prisma";
 
+export const runtime = 'edge';
+
 export default async function SongPage({
     params: { code },
 }: {

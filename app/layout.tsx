@@ -1,12 +1,12 @@
 import { cn } from '@/lib/utils'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter as FontSans } from "next/font/google"
+import { Inter } from "next/font/google"
 import { ThemeProvider } from './theme-provider'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
  
-export const fontSans = FontSans({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 })
@@ -21,7 +21,7 @@ export default function RootLayout(props: { children: React.ReactNode, modal: Re
     <html lang="fr" suppressHydrationWarning>
       <body 
        className={
-        cn(fontSans.className, "prose dark:prose-invert prose-a:no-underline max-w-none prose-li:list-none")
+        cn(inter.className, "prose dark:prose-invert prose-a:no-underline max-w-none prose-li:list-none")
        }
       >
         <ThemeProvider
