@@ -26,7 +26,7 @@ export default function RootLayout(props: { children: React.ReactNode, modal: Re
       >
         <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >

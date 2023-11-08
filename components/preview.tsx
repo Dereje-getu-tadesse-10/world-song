@@ -13,7 +13,7 @@ export const Preview = ({ songs }: { songs: CountrySong[] }) => (
         className={buttonVariants({ className:"mt-14 mx-auto !flex !items-center !max-w-max" })}
             href={`/songs`}
         >
-            Voir plus pays
+            Voir plus de pays
         </Link>
     </div>
 )

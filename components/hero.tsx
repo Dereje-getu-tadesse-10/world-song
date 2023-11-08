@@ -12,13 +12,13 @@ export const Hero = () => (
             Voyagez à travers les mélodies qui font bouger le monde.
             </p>
         </div >
-        <Link 
-            href={`/songs`}
+        <a 
+            href={`/#preview`}
             className={buttonVariants({className:"max-w-max mx-auto mt-6"})}
         >
             Commencer à écouter
 
-        </Link>
+        </a>
         <p className="flex flex-col justify-center items-center gap-2 text-center text-sm mt-7 md:flex-row">
         Voyagez à travers les stéréotypes sonores du monde.
         </p>
